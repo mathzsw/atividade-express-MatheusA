@@ -1,0 +1,73 @@
+<html>
+<head>
+
+    <title>Listar Jogos</title>
+
+    <style>
+
+        body{
+            background-color:#121212;
+            font-family:Arial;
+            color:white;
+            text-align:center;
+        }
+
+        h1{
+            background-color:rgb(1, 2, 70);
+            padding:15px;
+        }
+
+        a{
+            background-color:green;
+            color:white;
+            padding:10px;
+            text-decoration:none;
+            border-radius:10px;
+        }
+
+        .card{
+            background-color:#1e1e1e;
+            width:400px;
+            margin:auto;
+            margin-top:20px;
+            padding:20px;
+            border-radius:15px;
+        }
+
+        img{
+            width:350px;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lista de Jogos</h1>
+
+    <a href="/jogos/cadastrar">
+        Cadastrar Jogo
+    </a>
+
+    {{#each jogos}}
+
+    <div class="card">
+
+        <h2>{{this.nome}}</h2>
+
+        <img src="{{this.imagem}}">
+
+        <p>Gênero: {{this.genero}}</p>
+
+        <p>Plataforma: {{this.plataforma}}</p>
+
+    </div>
+
+    {{/each}}
+
+</body>
+</html>

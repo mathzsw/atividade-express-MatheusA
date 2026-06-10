@@ -1,0 +1,87 @@
+<html>
+<head>
+
+    <title>Cadastrar Jogo</title>
+
+    <style>
+
+        body{
+            background-color:#121212;
+            color:white;
+            font-family:Arial;
+        }
+
+        .formulario{
+            background-color:#1e1e1e;
+            width:400px;
+            margin:auto;
+            margin-top:50px;
+            padding:20px;
+            border-radius:15px;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            margin-top:20px;
+            background-color:rgb(1, 2, 70);
+            color:white;
+            border:none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="formulario">
+
+        <h1>Cadastrar Jogo</h1>
+
+        <form action="/jogos" method="post">
+
+            <input
+                type="text"
+                name="nome"
+                placeholder="Nome"
+            >
+
+            <input
+                type="text"
+                name="genero"
+                placeholder="Gênero"
+            >
+
+            <input
+                type="text"
+                name="plataforma"
+                placeholder="Plataforma"
+            >
+
+            <input
+                type="text"
+                name="imagem"
+                placeholder="URL da imagem"
+            >
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
